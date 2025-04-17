@@ -111,3 +111,16 @@ docker run --rm -d -p 3030:3030 product-service:latest
 ![image](https://github.com/user-attachments/assets/9233c0b5-02e7-4731-82c7-1076900169ff)
 
 <img width="505" alt="image" src="https://github.com/user-attachments/assets/03bd5e1f-6a7e-4731-844e-11bdab13c032" />
+
+
+### Step 3.3. Deploy to AKS:
+bash
+Copy
+Edit
+kubectl apply -f deployment.yaml
+kubectl get services
+<img width="546" alt="image" src="https://github.com/user-attachments/assets/bf5c6152-f251-4c42-b5b9-36a8a84811c4" />
+
+
+
+<img width="546" alt="image" src="https://github.com/user-attachments/assets/5166d5f2-c42d-452c-b736-89d1e11548d2" />
