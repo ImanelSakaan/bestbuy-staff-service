@@ -39,3 +39,33 @@ Formats or packaging mechanisms that allow you to deploy (or run) a service on i
 - **Operating system executable**: A file that the operating system recognizes as a program it can run, like an `.exe` file in Windows.
 - **Docker container image**: An encapsulated environment that can run applications isolated from the host system.
 
+## CRUD Operations
+
+**CRUD** stands for **Create, Read, Update, and Delete** — the four basic functions used in persistent storage systems like databases.
+
+### 1. Create
+- Adds new data or records to a database.
+- **Example:** Submitting a new product form to store it in the inventory database.
+
+### 2. Read
+- Retrieves or displays existing data from a database.
+- **Example:** Viewing the list of all orders placed by customers.
+
+### 3. Update
+- Modifies existing data in the database.
+- **Example:** Editing a product’s price or name in the admin dashboard.
+
+### 4. Delete
+- Removes data from the database.
+- **Example:** Deleting an outdated product from the catalog.
+
+### CRUD in RESTful APIs
+
+| Operation | SQL Command | HTTP Method     |
+|-----------|-------------|-----------------|
+| Create    | `INSERT`    | `POST`          |
+| Read      | `SELECT`    | `GET`           |
+| Update    | `UPDATE`    | `PUT` / `PATCH` |
+| Delete    | `DELETE`    | `DELETE`        |
+
+
