@@ -69,3 +69,9 @@ Formats or packaging mechanisms that allow you to deploy (or run) a service on i
 | Delete    | `DELETE`    | `DELETE`        |
 
 
+# Step 2: Deploy Store-Front on Azure Static Web Apps
+4.1. Create an Azure Static Web App
+In the Azure Portal, navigate to "Static Web Apps" and create a new static web app.
+Source: Choose GitHub as the deployment source.
+Repository: Select the repository containing your store-front code.
+Build Presets: Choose "Vue.js" if prompted.
