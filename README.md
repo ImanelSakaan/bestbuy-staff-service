@@ -91,3 +91,22 @@ In the Azure Portal, navigate to "Static Web Apps" and create a new static web a
 Source: Choose GitHub as the deployment source.
 Repository: Select the repository containing your store-front code.
 Build Presets: Choose "Vue.js" if prompted.
+
+# step 3 Containerizing the Best buy Store Microservices
+### Step 3.1. Dockerize the order-service
+      cd order-service-L8
+      In the order-service directory, create a Dockerfile with the following content: and copy the code on it
+      Build the Docker image:
+      docker build -t order-service:latest .
+      Run a Docker container from order-service:latest image and expose it on port 3000:
+      docker run --rm -d -p 3000:3000 order-service:latest
+<img width="637" alt="image" src="https://github.com/user-attachments/assets/44608e3c-0e36-495d-8337-c8b16dc4525b" />
+
+### Step 3.2. Dockerize the product-service
+cd product-service-L8
+In the order-service directory, create a Dockerfile with the following content: and copy the code on it
+docker build -t product-service:latest .
+docker run --rm -d -p 3030:3030 product-service:latest
+![image](https://github.com/user-attachments/assets/9233c0b5-02e7-4731-82c7-1076900169ff)
+
+<img width="505" alt="image" src="https://github.com/user-attachments/assets/03bd5e1f-6a7e-4731-844e-11bdab13c032" />
